@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingBottom="12dp"
+    android:background="#131010">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:cardCornerRadius="10dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#1B1919">
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/tv_name_episode"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20sp"
+                android:textColor="#00C853"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                tools:text="Pilot" />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/tv_date_episode"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="#00C853"
+                android:layout_marginStart="20sp"
+                android:layout_below="@+id/tv_name_episode"
+                android:layout_marginTop="8sp"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                tools:text="December 2, 2013" />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/tv_episode_code"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="#00C853"
+                android:layout_marginStart="20sp"
+                android:layout_below="@+id/tv_date_episode"
+                android:layout_marginTop="8sp"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                android:text="@string/episode_code" />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/tv_episode"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignTop="@+id/tv_episode_code"
+                android:layout_marginStart="8sp"
+                android:layout_toEndOf="@+id/tv_episode_code"
+                android:textColor="#00C853"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                tools:text="2017" />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/tv_created"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="#00C853"
+                android:layout_marginStart="20sp"
+                android:layout_below="@+id/tv_episode_code"
+                android:layout_marginTop="8sp"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                tools:text="2017-11-10T12:56:33.798Z" />
+
+        </RelativeLayout>
+
+    </androidx.cardview.widget.CardView>
+
+</RelativeLayout>

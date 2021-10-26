@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="#131010"
+    android:paddingBottom="10dp">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:cardCornerRadius="12dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#1B1919">
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:id="@+id/iv_avatar"
+                android:layout_width="160dp"
+                android:layout_height="180dp"
+                android:background="@drawable/bg_rounded_iv"
+                android:clipToOutline="true"
+                android:scaleType="centerCrop"
+                android:src="@drawable/img" />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/tv_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="14sp"
+                android:layout_marginTop="8sp"
+                android:layout_toEndOf="@+id/iv_avatar"
+                android:textColor="@color/white"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                tools:text="Cool Rick" />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/tv_gender"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toEndOf="@+id/tv_name"
+                android:layout_alignTop="@+id/tv_name"
+                android:textSize="14sp"
+                android:layout_marginStart="64sp"
+                android:layout_marginTop="3sp"
+                android:textColor="@color/white"
+                tools:text="male"/>
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/tv_alive"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/tv_name"
+                android:layout_marginStart="14sp"
+                android:layout_toEndOf="@+id/iv_avatar"
+                android:fontFamily="sans-serif-medium"
+                android:textColor="@color/white"
+                android:textSize="14sp"
+                tools:text="Alive - " />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/tv_human"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/tv_name"
+                android:layout_toEndOf="@+id/tv_alive"
+                android:fontFamily="sans-serif-medium"
+                android:textColor="@color/white"
+                android:textSize="14sp"
+                android:layout_marginStart="8sp"
+                tools:text="Human " />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/tv_last_known"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/tv_alive"
+                android:layout_centerVertical="true"
+                android:layout_marginStart="14sp"
+                android:layout_marginTop="10sp"
+                android:layout_toEndOf="@+id/iv_avatar"
+                android:fontFamily="sans-serif-medium"
+                android:text="@string/last_known_location"
+                android:textColor="#424242"
+                android:textSize="14sp" />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/tv_location"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/tv_last_known"
+                android:layout_centerVertical="true"
+                android:layout_marginStart="14sp"
+                android:layout_toEndOf="@+id/iv_avatar"
+                android:fontFamily="sans-serif-medium"
+                android:textColor="@color/white"
+                android:textSize="14sp"
+                tools:text="Earth(Replacement Dimension" />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/tv_last_seen"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/tv_location"
+                android:layout_centerVertical="true"
+                android:layout_marginStart="14sp"
+                android:layout_marginTop="10sp"
+                android:layout_toEndOf="@+id/iv_avatar"
+                android:fontFamily="sans-serif-medium"
+                android:text="@string/first_seen_in"
+                android:textColor="#424242"
+                android:textSize="14sp" />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/tv_first_seen"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/tv_last_seen"
+                android:layout_centerVertical="true"
+                android:layout_marginStart="14sp"
+                android:layout_toEndOf="@+id/iv_avatar"
+                android:fontFamily="sans-serif-medium"
+                android:textColor="@color/white"
+                android:textSize="14sp"
+                tools:text="Edge of Tomorty:Rick,Die,Rickpeat" />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/tv_created"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/tv_first_seen"
+                android:layout_centerVertical="true"
+                android:layout_marginStart="14sp"
+                android:layout_toEndOf="@+id/iv_avatar"
+                android:fontFamily="sans-serif-medium"
+                android:textColor="@color/white"
+                android:textSize="12sp"
+                tools:text="2012" />
+
+        </RelativeLayout>
+
+    </androidx.cardview.widget.CardView>
+
+</RelativeLayout>

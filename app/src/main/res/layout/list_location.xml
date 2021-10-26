@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingBottom="12dp"
+    android:background="#131010">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:cardCornerRadius="10dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#1B1919">
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/tv_name_location"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20sp"
+                android:textColor="#00C853"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                tools:text="Earth" />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/tv_type_location"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="#00C853"
+                android:layout_marginStart="20sp"
+                android:layout_below="@+id/tv_name_location"
+                android:layout_marginTop="8sp"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                tools:text="Planet" />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/tv_dimension_location"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="#00C853"
+                android:layout_marginStart="20sp"
+                android:layout_below="@+id/tv_type_location"
+                android:layout_marginTop="8sp"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                tools:text="Dimension C - 137" />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/tv_created_location"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="#00C853"
+                android:layout_marginStart="20sp"
+                android:layout_below="@+id/tv_dimension_location"
+                android:layout_marginTop="8sp"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                tools:text="2017-11-10T12:42:04.162Z" />
+
+        </RelativeLayout>
+
+
+    </androidx.cardview.widget.CardView>
+
+</RelativeLayout>
